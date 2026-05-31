@@ -165,17 +165,20 @@ export default function LandingPagePerumahan() {
               {
                 type: 'Type 30/60',
                 price: 'Mulai Rp166 Juta',
-                img: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200&auto=format&fit=crop',
+                img: '/images/Rumahdua.jpeg',
+                              
               },
               {
                 type: 'Type 36/72',
                 price: 'Mulai Rp185 Juta',
-                img: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop',
+                // img: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop',
+                img: '/images/Rumahtiga.jpeg',
               },
               {
                 type: 'Type 45/84',
                 price: 'Mulai Rp230 Juta',
-                img: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=1200&auto=format&fit=crop',
+                // img: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=1200&auto=format&fit=crop',
+                img: '/images/Rumahtiga.jpeg',
               },
             ].map((house, index) => (
               <div
@@ -230,16 +233,28 @@ export default function LandingPagePerumahan() {
         <div className="grid lg:grid-cols-3 gap-8 mt-14">
           {[
             {
-              name: 'Andi Saputra',
+              name: 'Dedy Saputra',
               text: 'Proses KPR cepat dan rumahnya nyaman untuk keluarga.',
             },
             {
-              name: 'Rina Marlina',
+              name: 'Qisthy Syafira',
               text: 'Lokasinya strategis dan harga masih sangat terjangkau.',
             },
             {
-              name: 'Budi Hermawan',
+              name: 'Gysha Mahira',
               text: 'Developer amanah dan progres pembangunan bagus.',
+            },
+            {
+              name: 'Adam Alif',
+              text: 'Konsultasi mudah dengan Developer.',
+            },
+            {
+              name: 'Anhar ',
+              text: 'Hunian asri dan deket dari jalan raya.',
+            },
+            {
+              name: 'Maria Ulfa',
+              text: 'KPR mudah dan cepat.',
             },
           ].map((item, index) => (
             <div
