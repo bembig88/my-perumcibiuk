@@ -160,26 +160,45 @@ export default function LandingPagePerumahan() {
             </a>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-8 mt-14">
+          <div className="grid lg:grid-cols-2 gap-8 mt-14">
             {[
               {
                 type: 'Type 30/60',
                 price: 'Mulai Rp166 Juta',
                 img: '/images/Rumahdua.jpeg',
-                              
+                kamarTidur: 2,
+                kamarMandi: 1,
+                luasBangunan: 30,
+                luasTanah: 60,
+                fasilitas: [
+                  "Ruang Tamu",
+                  "Dapur",
+                  "Carport"
+                ]        
               },
               {
-                type: 'Type 36/72',
+                type: 'Type 36/60',
                 price: 'Mulai Rp185 Juta',
                 // img: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop',
                 img: '/images/Rumahtiga.jpeg',
+                kamarTidur: 2,
+                kamarMandi: 1,
+                luasBangunan: 36,
+                luasTanah: 60,
+                fasilitas: [
+                  "Ruang Tamu",
+                  "Dapur",
+                  "Pagar Dapur",
+                  "Carport",
+                  "Teras"
+                ]
               },
-              {
-                type: 'Type 45/84',
-                price: 'Mulai Rp230 Juta',
-                // img: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=1200&auto=format&fit=crop',
-                img: '/images/Rumahtiga.jpeg',
-              },
+              // {
+              //   type: 'Type 45/60',
+              //   price: 'Mulai Rp230 Juta',
+              //   // img: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=1200&auto=format&fit=crop',
+              //   img: '/images/Rumahtiga.jpeg',
+              // },
             ].map((house, index) => (
               <div
                 key={index}
@@ -199,10 +218,20 @@ export default function LandingPagePerumahan() {
                   </p>
 
                   <ul className="mt-5 space-y-2 text-gray-600">
-                    <li>✔️ 2 Kamar Tidur</li>
+                    {/* <li>✔️ 2 Kamar Tidur</li>
                     <li>✔️ 1 Kamar Mandi</li>
                     <li>✔️ Ruang Tamu</li>
                     <li>✔️ Carport</li>
+                  </ul> */}
+
+                  <li>🛏️ {house.kamarTidur} Kamar Tidur</li>
+                  <li>🚿 {house.kamarMandi} Kamar Mandi</li>
+                  <li>🏠 Luas Bangunan {house.luasBangunan} m²</li>
+                  <li>📐 Luas Tanah {house.luasTanah} m²</li>
+
+                  {house.fasilitas.map((item, idx) => (
+                    <li key={idx}>✔️ {item}</li>
+                  ))}
                   </ul>
 
                   <a
@@ -211,6 +240,7 @@ export default function LandingPagePerumahan() {
                   >
                     Booking Sekarang
                   </a>
+
                 </div>
               </div>
             ))}
