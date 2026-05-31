@@ -73,8 +73,8 @@ export default function LandingPagePerumahan() {
 
           <div className="relative">
             <img
-              // src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=1200&auto=format&fit=crop"
-              src="/images/Rumahsatu.jpeg?q=80&w=1200&auto=format&fit=crop"
+              // src="https://public/images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=1200&auto=format&fit=crop"
+              src="public/images/Rumahsatu.jpeg?q=80&w=1200&auto=format&fit=crop"
               alt="Perumahan Subsidi"
               className="rounded-3xl shadow-2xl object-cover h-[500px] w-full"
             />
