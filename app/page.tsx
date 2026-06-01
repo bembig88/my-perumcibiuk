@@ -74,7 +74,7 @@ export default function LandingPagePerumahan() {
           <div className="relative">
             <img
               // src="https://public/images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=1200&auto=format&fit=crop"
-              src="images/Rumahsatu.jpeg?q=80&w=1200&auto=format&fit=crop"
+              src="images/Rumahdua.jpeg?q=80&w=1200&auto=format&fit=crop"
               alt="Perumahan Subsidi"
               className="rounded-3xl shadow-2xl object-cover h-[500px] w-full"
             />
@@ -165,7 +165,7 @@ export default function LandingPagePerumahan() {
               {
                 type: 'Type 30/60',
                 price: 'Mulai Rp166 Juta',
-                img: '/images/Rumahdua.jpeg',
+                img: '/images/Rumahtampakdepan.jpeg',
                 kamarTidur: 2,
                 kamarMandi: 1,
                 luasBangunan: 30,
@@ -192,13 +192,7 @@ export default function LandingPagePerumahan() {
                   "Carport",
                   "Teras"
                 ]
-              },
-              // {
-              //   type: 'Type 45/60',
-              //   price: 'Mulai Rp230 Juta',
-              //   // img: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=1200&auto=format&fit=crop',
-              //   img: '/images/Rumahtiga.jpeg',
-              // },
+              },             
             ].map((house, index) => (
               <div
                 key={index}
